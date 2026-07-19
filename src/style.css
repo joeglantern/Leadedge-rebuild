@@ -318,7 +318,7 @@ em.plain { font-style: normal; }
 
 /* ---- dark sections ---- */
 .dark-section { background: var(--ink); color: var(--cream); }
-.dark-section a { color: inherit; }
+.dark-section a:not(.btn) { color: inherit; }
 
 /* ---- about teaser (home) ---- */
 .about-teaser { padding-top: 120px; padding-bottom: 120px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
