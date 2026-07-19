@@ -1,9 +1,6 @@
 // Leadedge Consults — site behaviour: loader, scroll reveals, stat counters,
 // hero word rotation, mobile menu, contact form.
 
-const isReturn = document.documentElement.classList.contains('le-return');
-try { sessionStorage.setItem('leSeen', '1'); } catch { /* private browsing */ }
-
 /* ------------------------------------------------------------------ */
 /* Loader                                                             */
 /* ------------------------------------------------------------------ */
@@ -22,7 +19,7 @@ if (loader) {
 
   const bar = document.getElementById('le-bar');
   const cnt = document.getElementById('le-count');
-  const dur = isReturn ? 480 : 2100;
+  const dur = 2100;
   const t0 = performance.now();
   const tick = (t) => {
     const p = Math.min((t - t0) / dur, 1);
@@ -37,7 +34,7 @@ if (loader) {
   setTimeout(() => {
     window.removeEventListener('mousemove', onMove);
     loader.remove();
-  }, isReturn ? 1100 : 3400);
+  }, 3400);
 }
 
 /* ------------------------------------------------------------------ */

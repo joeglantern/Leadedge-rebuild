@@ -74,7 +74,6 @@ h1, h2, h3 { margin: 0; }
   display: flex; align-items: center; justify-content: center;
   animation: loaderHide 0.8s 2.6s cubic-bezier(0.6, 0, 0.2, 1) forwards;
 }
-html.le-return .loader { animation: loaderHide 0.45s 0.55s cubic-bezier(0.6, 0, 0.2, 1) forwards; }
 .loader-dots {
   position: absolute; inset: -40px;
   background-image: radial-gradient(circle, rgba(25, 26, 51, 0.14) 2px, transparent 2.4px);
