@@ -122,10 +122,8 @@ if (toggle && menu) {
 /* ------------------------------------------------------------------ */
 /* Contact form                                                       */
 /* ------------------------------------------------------------------ */
-// Create a free form at https://formspree.io, then paste its endpoint here
-// (looks like https://formspree.io/f/abcdwxyz). Until then the form shows the
-// thank-you panel without sending anything.
-const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+// Same-origin endpoint served by formrelay (nginx proxies /api/ to it).
+const FORM_ENDPOINT = '/api/submit/leadedge';
 
 const form = document.getElementById('contact-form');
 if (form) {
@@ -145,18 +143,19 @@ if (form) {
     }
     hint.textContent = '';
 
-    if (FORM_ENDPOINT.includes('YOUR_FORM_ID')) {
-      card.classList.add('sent');
-      return;
-    }
-
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending…';
     try {
       const res = await fetch(FORM_ENDPOINT, {
         method: 'POST',
-        headers: { Accept: 'application/json' },
-        body: new FormData(form),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          email,
+          org: form.elements.org.value.trim(),
+          msg,
+          _gotcha: form.elements._gotcha ? form.elements._gotcha.value : '',
+        }),
       });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       card.classList.add('sent');
