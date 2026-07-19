@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Leadedge Consults</title>
+  <meta name="description" content="Tell us what you are working toward. Leadedge Consults responds within 24 hours on business days. Manga House, Upper Hill, Kiambere Road, Nairobi.">
+  <link rel="icon" type="image/png" href="assets/leadedge-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+  <script>try{if(sessionStorage.getItem('leSeen'))document.documentElement.classList.add('le-return')}catch(e){}</script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="le-loader" class="loader" aria-hidden="true">
+    <div class="loader-dots"></div>
+    <div class="loader-burst"></div>
+    <div class="le-px px-a" data-depth="0.12"><div></div></div>
+    <div class="le-px px-b" data-depth="0.22"><div></div></div>
+    <div class="le-px px-c" data-depth="0.16"><div></div></div>
+    <div class="le-px px-d" data-depth="0.28"><div></div></div>
+    <div class="le-px px-e" data-depth="0.09"><div></div></div>
+    <div class="le-px px-f" data-depth="0.2"><div></div></div>
+    <div class="loader-center">
+      <div class="loader-card"><div class="clip"><img src="assets/leadedge-logo.png" alt="Leadedge Consults"></div></div>
+      <div class="loader-progress">
+        <div class="loader-track"><div id="le-bar" class="loader-bar"></div></div>
+        <span id="le-count" class="loader-count">0%</span>
+      </div>
+      <div class="loader-tag">Lead the edge</div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="topbar"></div>
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="nav-logo" href="index.html"><img src="assets/leadedge-logo.png" alt="Leadedge Consults"></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html" class="nav-cta">Work with us</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mm-shape-a"></div>
+    <div class="mm-shape-b"></div>
+    <div class="mm-top">
+      <span class="mm-logo-chip"><img src="assets/leadedge-logo.png" alt="Leadedge Consults"></span>
+      <button class="mm-close" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="mm-links" aria-label="Mobile navigation">
+      <a href="index.html"><span class="num">01</span>Home</a>
+      <a href="services.html"><span class="num">02</span>Services</a>
+      <a href="about.html"><span class="num">03</span>About</a>
+      <a href="partners.html"><span class="num">04</span>Partners</a>
+      <a href="contact.html" class="active"><span class="num">05</span>Contact</a>
+    </nav>
+    <div class="mm-bottom">
+      <a href="contact.html" class="mm-cta">Work with us &rarr;</a>
+      <div class="mm-contact">
+        <a href="tel:0717662503">0717 662 503</a>
+        <a href="mailto:leadedge.Consult@aol.com">leadedge.Consult@aol.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero wrap" style="padding-bottom:72px;">
+    <span class="kicker">Contact</span>
+    <h1>Say hello. <em class="accent">We answer.</em></h1>
+    <p class="lede" style="margin-top:36px;max-width:600px;">Tell us what you are working toward. We respond within 24 hours on business days.</p>
+  </section>
+
+  <!-- FORM + INFO -->
+  <section class="contact-section wrap">
+    <div class="form-card" id="form-card" data-reveal>
+      <form id="contact-form" class="form-fields" novalidate>
+        <div class="form-row">
+          <label class="field">Name
+            <input type="text" name="name" placeholder="Your full name" autocomplete="name">
+          </label>
+          <label class="field">Email
+            <input type="email" name="email" placeholder="you@organization.org" autocomplete="email">
+          </label>
+        </div>
+        <label class="field">Organization
+          <input type="text" name="org" placeholder="Where do you work?" autocomplete="organization">
+        </label>
+        <label class="field">How can we help?
+          <textarea name="msg" rows="5" placeholder="Tell us about your project, challenge, or idea."></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="form-submit">Send message &rarr;</button>
+          <span class="form-hint" id="form-hint"></span>
+        </div>
+      </form>
+      <div class="form-success">
+        <div class="big">Thank you<em class="accent">.</em></div>
+        <p>Your message is on its way. We will get back to you within one business day.</p>
+        <button type="button" class="form-reset" id="form-reset">Send another message</button>
+      </div>
+    </div>
+    <div class="info-list" data-reveal>
+      <div class="info-row">
+        <div class="lbl">Visit our office</div>
+        <p>Manga House, Upper Hill<br>Kiambere Road<br>11054-00100 Nairobi</p>
+      </div>
+      <div class="info-row">
+        <div class="lbl">Call us</div>
+        <a href="tel:0717662503">0717 662 503</a>
+      </div>
+      <div class="info-row">
+        <div class="lbl">Email us</div>
+        <a href="mailto:leadedge.Consult@aol.com">leadedge.Consult@aol.com</a>
+      </div>
+      <div class="info-row">
+        <div class="lbl">Business hours</div>
+        <p>Monday to Friday<br>9:00 AM to 6:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="inner wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo-chip"><img src="assets/leadedge-logo.png" alt="Leadedge Consults"></span>
+          <p>A professional business development firm working to grow from good to great in the eyes of our clients, partners, and the African public at large.</p>
+        </div>
+        <div class="footer-col">
+          <div class="hd">Pages</div>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="partners.html">Partners</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <div class="hd">Services</div>
+          <nav>
+            <a href="services.html#capacity">Capacity Development</a>
+            <a href="services.html#policy">Policy &amp; Advocacy</a>
+            <a href="services.html#research">Research &amp; Analysis</a>
+            <a href="services.html#strategy">Strategy &amp; Operations</a>
+            <a href="services.html#monitoring">Monitoring &amp; Evaluation</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <div class="hd">Contact</div>
+          <div class="list">
+            <span>Manga House, Upper Hill<br>Kiambere Road, Nairobi</span>
+            <a href="tel:0717662503">0717 662 503</a>
+            <a href="mailto:leadedge.Consult@aol.com">leadedge.Consult@aol.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-giant">Lead the edge<em>.</em></div>
+      <div class="footer-legal">
+        <span>&copy; 2026 Leadedge Consults. All rights reserved.</span>
+        <div class="links">
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
