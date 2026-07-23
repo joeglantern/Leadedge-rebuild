@@ -157,7 +157,7 @@ if (form) {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       card.classList.add('sent');
     } catch {
-      hint.textContent = 'Something went wrong. Please try again, or email us at leadedge.Consult@aol.com.';
+      hint.textContent = 'Something went wrong. Please try again, or email us at info@leadedgeconsults.com.';
     } finally {
       submitBtn.disabled = false;
       submitBtn.innerHTML = submitLabel;
